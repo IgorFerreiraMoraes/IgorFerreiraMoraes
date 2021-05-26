@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Igor Moraes | Main Page</title>
+
+    <link rel="shortcut icon" href="ico.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="main initi">
+        <header>
+            <div class="profile">
+                <img src="imgs/profile.png" alt="igor">
+                <h1>IGOR F. MORAES</h1>
+            </div>
+        </header>
+        <p>
+            Hello, I'm Igor!
+            Welcome to my website, in which I show some of my works, such as writings, drawings, projects in general.
+            Hope you enjoy it :)
+        </p>
+        <div class="social">
+            <a href="https://www.youtube.com/channel/UCGnMW2INygBHgFqlW2McRsg" target="youtube" id="yout">
+                <img src="imgs/icons/youtube.svg" alt="youtube">
+                Youtube
+            </a>
+            <img src="imgs/icons/scroll.svg" id="scroll" alt="">
+            <a href="https://www.instagram.com/igor.f.moraes/" target="insta" id="insta">
+                <img src="imgs/icons/instagram.svg" alt="youtube">
+                Instagram
+            </a>
+        </div>
+    </section>
+
+    <section class="main about">
+        <h2>About Me</h2>
+        <p>
+            I am a guy born on January 2005, in Brazil, who started playing with Photoshop when I was 11 years old (I used to create textures for Minecraft). A little time after, I enrolled in a game-making course, that helped me with the basics of programming and introduced me to the world of pixel art. 
+        </p>
+        <p>
+            Aside from learning most of the things by watching or reading about how to do it, I also started an informatics technical course during high school. Nowadays I'm really into design and front-end development.
+        </p>
+    </section>
+
+    <section class="main work">
+        <div onclick="pixel()" id="pixel" class="image"></div>
+        <div onclick="painting()" id="paint" class="image"></div>
+        <div onclick="website()" id="website" class="icon"></div>
+        <div onclick="writing()" id="writing" class="icon"></div>
+    </section>
+
+    <script>
+        function pixel(){
+            location.assign("pixel.html")
+        }
+        function painting(){
+            location.assign("paintings.html")
+        }
+        function website(){
+            location.assign("website.html")
+        }
+        function writing(){
+            location.assign("writings.html")
+        }
+    </script>
+</body>
+</html>
