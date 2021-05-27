@@ -137,6 +137,7 @@ section.main.work{
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
     section.main.work div{
+        position: relative;
         margin: 10vh auto;
         width: 70vw;
         height: 70vw;
@@ -147,6 +148,18 @@ section.main.work{
         background-position: center;
         background-repeat: no-repeat;
     }
+        section.main.work div h2{
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 8vmin;
+            text-align: center;
+            color: #000000;
+            text-shadow: #fff 1px 1px 3px;
+        }
         section.main.work div:hover{
             box-shadow: #00000099 0 5px 15px;
         }
