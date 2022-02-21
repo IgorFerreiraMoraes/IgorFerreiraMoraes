@@ -413,7 +413,7 @@ div.project.hide {
 	right: 11%;
 	top: 30%;
 }
-.about.hide {
+.about{
 	border-radius: 1.8vmin 0 0 1.8vmin;
 }
 .about.hide .proj-desc,
