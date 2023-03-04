@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+:root {
+	--main: #ff72d9;
+	--black: linear-gradient(129.76deg, #2c2c2c 3.53%, #464646 101.21%);
+	--white: #ffffff;
+	font-size: 3.7vw;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+body {
+	background: var(--black) no-repeat;
+	color: var(--white);
+	width: 100%;
+}
+#background {
+	height: 12.3vh;
+	background: var(--main);
+	background: url(Assets/Landing/background.svg);
+	background-size: cover;
+}
+.landing-page {
+	width: 66.4%;
+	margin: 5.2vh auto;
+	position: relative;
+}
+.landing-page::after {
+	content: '';
+	background: url(Assets/Landing/dots.svg);
+	background-size: 100%;
+	position: absolute;
+	width: 12.8vw;
+	height: 13.6vw;
+	top: 0;
+	right: -2.3vw;
+}
+h1 {
+	font-size: 4rem;
+	line-height: 100%;
+	letter-spacing: 0.04rem;
+}
+h2.hello {
+	color: var(--main);
+	font-weight: 400;
+	font-size: 3rem;
+	line-height: 110%;
+}
+h2.presentation {
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 160%;
+	letter-spacing: -0.025rem;
+}
+h2.presentation::after {
+	content: ' 😛';
+	font-size: 1.5rem;
+}
+.social h2 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	text-align: center;
+	line-height: 116.2%;
+	margin-bottom: 0.86vh;
+}
+.social ul {
+	list-style: none;
+	margin-bottom: 5.2vh;
+}
+.social li {
+	height: 7vw;
+	width: 36.5vw;
+	margin: auto;
+	position: relative;
+	margin-bottom: 0.86vh;
+}
+.social a {
+	font-weight: 400;
+	font-size: 1.375rem;
+	color: var(--white);
+	text-align: left;
+	height: 7vw;
+	line-height: 7vw;
+	width: 24vw;
+	margin-right: 1.8vw;
+	position: absolute;
+	left: 0;
+	text-decoration: none;
+}
+.social img {
+	width: 7vw;
+	height: 7vw;
+	position: absolute;
+	right: 0;
+}
+.projects {
+	background: url(Assets/Projects/background-projects.svg);
+	padding: 3.5vh 0;
+	background-size: 100% 100%;
+	border-radius: 2rem 2rem 0 0;
+}
+.project {
+	border-radius: 1.5rem;
+	width: 80vw;
+	margin: 0 auto 1.75vh auto;
+	height: 30vh;
+	position: relative;
+}
+.about {
+	background: var(--black);
+	height: 17.3%;
+	width: 100%;
+	border-radius: 0 0 1.5rem 1.5rem;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	transition: 0.27s ease-out;
+}
+.about img {
+	width: 8%;
+	height: 100%;
+	transition: 0.27s ease-out;
+}
+.about .about-text {
+	text-align: left;
+	font-size: 1.4vh;
+	padding: 0 10%;
+	display: none;
+	font-weight: 300;
+}
+.about .about-text span {
+	font-weight: 600;
+}
+.about .about-text ul {
+	list-style: none;
+}
+.about .about-text a {
+	color: var(--white);
+	background-color: var(--main);
+	text-decoration: none;
+	margin-left: 79.75%;
+	padding: 5px 10px;
+	border-radius: 0.5rem;
+}
+.about.active {
+	height: 100%;
+	border-radius: 1.5rem;
+}
+.about.active img {
+	height: 15%;
+	transform: rotate(-180deg);
+}
+.about.active .about-text {
+	display: block;
+	animation: appear 0.5s ease-in;
+}
+@keyframes appear {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+#solarium {
+	background: url(Assets/Projects/solarium.png);
+	background-size: cover;
+}
+#helpvice {
+	background: url(Assets/Projects/helpvice.png);
+	background-size: cover;
+}
+#day2day {
+	background: url(Assets/Projects/day2day.png);
+	background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+	:root {
+		font-size: 1.06vw;
+	}
+	#background {
+		height: 21.3vh;
+	}
+	.landing-page {
+		width: 78%;
+		margin: 14vh auto;
+	}
+	.landing-page::after {
+		width: 6.8vw;
+		height: 7.2vw;
+		top: -3.6vh;
+		left: -7.86vw;
+	}
+	h1 {
+		font-size: 6rem;
+	}
+	h2.hello {
+		font-size: 4rem;
+	}
+	h2.presentation {
+		font-size: 2.5rem;
+	}
+	h2.presentation::after {
+		font-size: 2rem;
+	}
+
+	.social {
+		position: absolute;
+		top: 35vh;
+		right: 11vw;
+	}
+	.social::after {
+		content: '';
+		background: url(Assets/Landing/lines.svg);
+		background-size: 100%;
+		position: absolute;
+		width: 7.9vw;
+		height: 2.7vw;
+		right: -11vw;
+		bottom: -5.8vh;
+	}
+	.social h2 {
+		font-size: 2.5rem;
+		text-align: right;
+		margin-bottom: 0.8vh;
+	}
+	.social li {
+		height: 3.8vh;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 0.8vh;
+	}
+	.social a {
+		font-size: 1.5rem;
+		text-align: right;
+		height: 3.7vh;
+		width: 8.5vw;
+		line-height: 3.7vh;
+		margin-right: 0;
+		position: absolute;
+		left: 10vw;
+	}
+	.social img {
+		width: 2vw;
+		height: 2vw;
+		position: absolute;
+		right: 0;
+	}
+
+	.projects {
+		padding: 7.3vh 0;
+		border-radius: 4rem 4rem 0 0;
+	}
+	.project {
+		border-radius: 3rem;
+		width: 50vw;
+		margin: 0 auto 3.25vh 11vw;
+		height: 80vh;
+		filter: drop-shadow(0 0.5rem 2rem rgba(0, 0, 0, 0.25));
+	}
+	.project:nth-child(even) {
+		margin: 0 auto 3.25vh 39vw;
+	}
+
+	.about {
+		border-radius: 0 0 3rem 3rem;
+	}
+	.about img {
+		width: 6.6%;
+	}
+	.about .about-text {
+		font-size: 2.7vh;
+	}
+	.about .about-text li {
+		margin-top: 2vh;
+	}
+	.about .about-text a {
+		margin-left: 80%;
+		padding: 0.6rem 2rem;
+		border-radius: 0.8rem;
+		transition: 0.2s ease-out;
+	}
+	.about .about-text a:hover {
+		background-color: #ffa0e6;
+	}
+	.about.active {
+		border-radius: 3rem;
+	}
+	.about.active img {
+		height: 15%;
+	}
+}
