@@ -166,15 +166,15 @@ h2.presentation::after {
 	}
 }
 #solarium {
-	background: url(Assets/Projects/solarium.png);
+	background: url(Assets/Projects/solarium.avif);
 	background-size: cover;
 }
 #helpvice {
-	background: url(Assets/Projects/helpvice.png);
+	background: url(Assets/Projects/helpvice.avif);
 	background-size: cover;
 }
 #day2day {
-	background: url(Assets/Projects/day2day.png);
+	background: url(Assets/Projects/day2day.avif);
 	background-size: cover;
 }
 
