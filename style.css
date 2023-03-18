@@ -165,6 +165,10 @@ h2.presentation::after {
 		opacity: 100%;
 	}
 }
+#cocktail {
+	background: url(Assets/Projects/cocktail-app.avif);
+	background-size: cover;
+}
 #solarium {
 	background: url(Assets/Projects/solarium.avif);
 	background-size: cover;
