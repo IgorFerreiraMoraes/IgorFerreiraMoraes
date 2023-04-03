@@ -118,11 +118,13 @@ h2.presentation::after {
 	bottom: 0;
 	text-align: center;
 	transition: 0.27s ease-out;
+	transition-property: height, border-radius;
 }
 .about img {
 	width: 8%;
 	height: 100%;
 	transition: 0.27s ease-out;
+	transition-property: height, transform;
 }
 .about .about-text {
 	text-align: left;
@@ -287,6 +289,7 @@ h2.presentation::after {
 		padding: 0.6rem 2rem;
 		border-radius: 0.8rem;
 		transition: 0.2s ease-out;
+		transition-property: background-color;
 	}
 	.about .about-text a:hover {
 		background-color: #ffa0e6;
