@@ -4,7 +4,6 @@
 	--main: #ff72d9;
 	--black: linear-gradient(129.76deg, #2c2c2c 3.53%, #464646 101.21%);
 	--white: #ffffff;
-	font-size: 3.7vw;
 }
 * {
 	box-sizing: border-box;
@@ -15,17 +14,16 @@
 body {
 	background: var(--black) no-repeat;
 	color: var(--white);
-	width: 100%;
 }
 #background {
-	height: 12.3vh;
+	height: min(12.3vh, 100px);
 	background: var(--main);
 	background: url(Assets/Landing/background.svg);
 	background-size: cover;
 }
 .landing-page {
-	width: 66.4%;
-	margin: 5.2vh auto;
+	width: min(80%, 360px);
+	margin: min(5.2vh, 3rem) auto;
 	position: relative;
 }
 .landing-page::after {
@@ -33,34 +31,34 @@ body {
 	background: url(Assets/Landing/dots.svg);
 	background-size: 100%;
 	position: absolute;
-	width: 12.8vw;
-	height: 13.6vw;
+	width: min(12.8vw, 3rem);
+	aspect-ratio: 0.94;
 	top: 0;
 	right: -2.3vw;
 }
 h1 {
-	font-size: 4rem;
+	font-size: clamp(2.5rem, 14.8vw, 4rem);
 	line-height: 100%;
 	letter-spacing: 0.04rem;
 }
 h2.hello {
 	color: var(--main);
 	font-weight: 400;
-	font-size: 3rem;
+	font-size: clamp(1.85rem, 11.1vw, 3rem);
 	line-height: 110%;
 }
 h2.presentation {
 	font-weight: 300;
-	font-size: 2rem;
+	font-size: clamp(1.25rem, 7.4vw, 2rem);
 	line-height: 160%;
 	letter-spacing: -0.025rem;
 }
 h2.presentation::after {
 	content: ' 😛';
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 5.55vw, 1.5rem);
 }
 .social h2 {
-	font-size: 2.25rem;
+	font-size: clamp(1.4rem, 8.325vw, 2.25rem);
 	font-weight: 600;
 	text-align: center;
 	line-height: 116.2%;
@@ -71,28 +69,27 @@ h2.presentation::after {
 	margin-bottom: 5.2vh;
 }
 .social li {
-	height: 7vw;
-	width: 36.5vw;
+	min-height: clamp(2rem, 7vw, 2.5rem);
+	width: min(60vw, 270px);
 	margin: auto;
 	position: relative;
 	margin-bottom: 0.86vh;
 }
 .social a {
 	font-weight: 400;
-	font-size: 1.375rem;
+	font-size: clamp(1rem, 5vw, 1.2rem);
 	color: var(--white);
 	text-align: left;
-	height: 7vw;
-	line-height: 7vw;
-	width: 24vw;
-	margin-right: 1.8vw;
+	height: clamp(2rem, 7vw, 2.5rem);
+	line-height: clamp(2rem, 7vw, 2.5rem);
+
 	position: absolute;
 	left: 0;
 	text-decoration: none;
 }
 .social img {
-	width: 7vw;
-	height: 7vw;
+	width: clamp(2rem, 7vw, 2.5rem);
+	aspect-ratio: 1;
 	position: absolute;
 	right: 0;
 }
@@ -103,17 +100,17 @@ h2.presentation::after {
 	border-radius: 2rem 2rem 0 0;
 }
 .project {
-	border-radius: 1.5rem;
+	border-radius: 1.25rem;
 	width: 80vw;
 	margin: 0 auto 1.75vh auto;
-	height: 30vh;
+	height: clamp(120px, 40vh, 600px);
 	position: relative;
 }
 .about {
 	background: var(--black);
 	height: 17.3%;
 	width: 100%;
-	border-radius: 0 0 1.5rem 1.5rem;
+	border-radius: 0 0 1.25rem 1.25rem;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -128,7 +125,7 @@ h2.presentation::after {
 }
 .about .about-text {
 	text-align: left;
-	font-size: 1.4vh;
+	font-size: max(1.4vh);
 	padding: 0 10%;
 	display: none;
 	font-weight: 300;
@@ -149,7 +146,7 @@ h2.presentation::after {
 }
 .about.active {
 	height: 100%;
-	border-radius: 1.5rem;
+	border-radius: 1.25rem;
 }
 .about.active img {
 	height: 15%;
@@ -185,21 +182,17 @@ h2.presentation::after {
 }
 
 @media only screen and (min-width: 992px) {
-	:root {
-		font-size: 1.06vw;
-	}
 	#background {
-		height: 21.3vh;
+		height: min(21.3vh, 200px);
 	}
 	.landing-page {
-		width: 78%;
+		width: min(80%, 1024px);
 		margin: 14vh auto;
 	}
 	.landing-page::after {
-		width: 6.8vw;
-		height: 7.2vw;
+		width: min(6.8vw, 6rem);
 		top: -3.6vh;
-		left: -7.86vw;
+		left: max(-7.86vw, -6rem);
 	}
 	h1 {
 		font-size: 6rem;
@@ -217,17 +210,7 @@ h2.presentation::after {
 	.social {
 		position: absolute;
 		top: 35vh;
-		right: 11vw;
-	}
-	.social::after {
-		content: '';
-		background: url(Assets/Landing/lines.svg);
-		background-size: 100%;
-		position: absolute;
-		width: 7.9vw;
-		height: 2.7vw;
-		right: -11vw;
-		bottom: -5.8vh;
+		right: max(10vw, calc(50vw - 512px));
 	}
 	.social h2 {
 		font-size: 2.5rem;
@@ -235,7 +218,6 @@ h2.presentation::after {
 		margin-bottom: 0.8vh;
 	}
 	.social li {
-		height: 3.8vh;
 		width: 100%;
 		margin: 0;
 		margin-bottom: 0.8vh;
@@ -243,12 +225,10 @@ h2.presentation::after {
 	.social a {
 		font-size: 1.5rem;
 		text-align: right;
-		height: 3.7vh;
-		width: 8.5vw;
 		line-height: 3.7vh;
 		margin-right: 0;
 		position: absolute;
-		left: 10vw;
+		right: 3vw;
 	}
 	.social img {
 		width: 2vw;
@@ -263,13 +243,13 @@ h2.presentation::after {
 	}
 	.project {
 		border-radius: 3rem;
-		width: 50vw;
-		margin: 0 auto 3.25vh 11vw;
+		width: 72vw;
+		margin: 0 auto 3.25vh 10vw;
 		height: 80vh;
 		filter: drop-shadow(0 0.5rem 2rem rgba(0, 0, 0, 0.25));
 	}
 	.project:nth-child(even) {
-		margin: 0 auto 3.25vh 39vw;
+		margin: 0 auto 3.25vh 18vw;
 	}
 
 	.about {
@@ -279,7 +259,7 @@ h2.presentation::after {
 		width: 6.6%;
 	}
 	.about .about-text {
-		font-size: 2.7vh;
+		font-size: 1.5rem;
 	}
 	.about .about-text li {
 		margin-top: 2vh;
