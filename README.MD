@@ -1,5 +1,5 @@
 # SOBRE:
-✨ Sou uma pessoa curiosa que ama transformar ideias em realidade.<br>🎮 Comecei minha jornada na programação criando mods para Minecraft e Pokémon, o que me levou a iniciar um curso de Programação de Jogos em 2018.<br>👩🏻‍💻 Depois, conheci me apaixonei pelo Desenvolvimento Web, meu foco atual.<br>📒 Em 2020, entrei no ensino médio técnico em informática, onde explorei diversas linguagens e tecnologias.<br>🎓 Atualmente, estudo na Universidade Federal do ABC para fazer Ciência da Computação
+✨ Sou uma pessoa curiosa que ama transformar ideias em realidade.<br>🎮 Comecei minha jornada na programação criando mods para Minecraft e Pokémon, o que me levou a iniciar um curso de Programação de Jogos em 2018.<br>👩🏻‍💻 Depois, conheci e me apaixonei por Desenvolvimento Web e Design, meus focos atuais.<br>📒 Em 2020, entrei no ensino médio técnico em informática, onde explorei diversas linguagens e tecnologias.<br>🎓 Atualmente, estudo na Universidade Federal do ABC para fazer Ciência da Computação
 
 
 ## SOCIAL:
